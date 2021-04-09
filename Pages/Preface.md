@@ -1,5 +1,6 @@
-**[RVBUST INC.](http://www.rvbust.com)** 成立半年有余。面试过不少从事机器人研究的小伙伴后，我发现一个问题：**绝大多数大陆毕业的学生都不像是「科班出身」的**。
+**[RVBUST INC.](http://www.rvbust.com)** was found in 2018.04.09. After interviewed many robotic background applicant, I have found that：**Most graduates from mainland do not have enough robotic comprehensive capacity**。
 
+If we just based on education experience, most students graduated from electromechanics or computer science, and even some robot research LABS, robotics company work experience ,they should be considered as "Professional Players".
 当然，如果仅从工作教育经历上看 —— 大部分毕业于机电、计算机专业，甚至是研究机器人的实验室，有过机器人公司的工作经历 —— 这些人应该都算是「专业选手」。
 
 但是，从面试情况上看，绝大多数人都不具备机器人学的完整知识体系：画电路板的小伙伴不知道怎么进行机器人工作空间分析；设计机构的小伙伴不知道怎么把动力学用在控制上；做控制算法的小伙伴不知道什么的构型空间（Configuration Space）；做运动规划的小伙伴不知道什么是Q-learning；做深度强化学习的小伙伴不知道学习到的控制指令要怎么让实际机器人运动起来。
