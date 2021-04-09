@@ -9,4 +9,4 @@ Since written time is short, there must have some omissions. So as the book beco
 Chinese edition: [Issue 2](https://github.com/qqfly/how-to-learn-robotics).
 Original author: [qrobotics [at] yeah [dot] net](mailto:qrobotics@yeah.net).
 
-Translated by Andy Wu 
+Translated by Andy Wu : [wujiashengallofus520 [at] gmail [dot] net](mailto:wujiashengallofus520@gmail.com).
