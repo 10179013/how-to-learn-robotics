@@ -1,30 +1,37 @@
 **[RVBUST INC.](http://www.rvbust.com)** was found in 2018.04.09. After interviewed many robotic background applicant, I have found that：**Most graduates from mainland do not have enough robotic comprehensive capacity**。
 
 If we just based on education experience, most students graduated from electromechanics or computer science, and even some robot research LABS, robotics company work experience ,they should be considered as "Professional Players".
-当然，如果仅从工作教育经历上看 —— 大部分毕业于机电、计算机专业，甚至是研究机器人的实验室，有过机器人公司的工作经历 —— 这些人应该都算是「专业选手」。
 
-但是，从面试情况上看，绝大多数人都不具备机器人学的完整知识体系：画电路板的小伙伴不知道怎么进行机器人工作空间分析；设计机构的小伙伴不知道怎么把动力学用在控制上；做控制算法的小伙伴不知道什么的构型空间（Configuration Space）；做运动规划的小伙伴不知道什么是Q-learning；做深度强化学习的小伙伴不知道学习到的控制指令要怎么让实际机器人运动起来。
+Of course, if only based on their work and education -- most of them majored in electromechanics and computer science, and even worked in robotics LABS and robotics companies -- these people should be considered as "professional players."
 
-从我这几年的学习经历上看，我是能理解这一现象的。博士刚入学的时候，我接下了师兄的 SmartPal 机器人。靠着师兄的「祖传代码」，也曾狐假虎威地在外宾面前做过一些演示：
+However, judging from the interviews, most of them didn't have a complete knowledge of robotics. The guy who drew the circuit board didn't know how to analyze the robot's workspace.People in design agencies don't know how to apply dynamics to control;The  guy coding the control algorithm doesn't know what the Configuration Space is;People who do exercise planning don't know what Q-learning is;The partners doing deep reinforcement learning do not know how to make the actual robot move with the control instructions they have learned.
+
+Judging from my learning experience in the past few years, I can understand this phenomenon.When I first entered the school, I took over my senior Bare-foot brother's SmartPal robot.Relying on the "ancestral code" of my senior Bare-foot brother, I also made some demonstrations in front of foreign guests:
+
 
 <p align="center">
   <img width="500" src="../Pics/SmartPalAndMe.jpg"/>
 </p>
 
-但是，当我后来真正开始看这些「祖传代码」的时候，我发现实际发给机器人的只有几个关节**位置**点而已。
+However, when I actually started to look at the "ancestral code", I realized that only a few joint ** points had been given to the robot.
 
-**「PID 在哪里？？？」**
+**「Where is the PID？？？」**
 
-这是我当时产生的最大疑问。这个代码逻辑跟我本科玩的四旋翼、智能车等都完全不一样！
+That was the biggest question I had.This code logic is completely different from the quadrotor, intelligent car and so on that I played during my undergraduate study!
+So, with this question, I asked around the people in my lab, no answer.Even then, I took a number of graduate courses in robotics.After a year of study, I still didn't get the answer.
 
-于是，拿着这个疑问，我在实验室问了一圈，没有得到答案。即使后来，我选修了好几门跟机器人相关的研究生课程。经过一年的学习，我还是没有得到答案。
+Yes, as one of the first universities to carry out robot research in China, the graduate course of robotics here only teaches us how to establish the DH coordinate system, and the dynamics is just a simple calculation of a plane three-link.There is no control, no trajectory planning, no inverse kinematics.
 
-是的，作为国内最早开展机器人研究的院校之一，这里的机器人研究生课程只教我们如何建立 DH 坐标系，动力学只是简单计算了一个平面三连杆。根本没有涉及控制、轨迹规划的内容，甚至连运动学逆解也没有要求大家计算。
+As far as I know, the same is true of many other institutions.
+There is still no complete teaching system for robotics in China. Therefore, most graduates in mainland China have not received a complete systematic education in robotics. They can only master the required content of the project through self-study when they are doing the project.
 
-据我所知，很多其他研究机构也是如此。国内机器人学这块还没有形成完整的教学体系，所以，大陆毕业的学生基本上都没有接受过完整的机器人学系统教育，只有在做项目的时候通过自学掌握项目所需的内容。这也就造就了一大批没有算过机器人运动学逆解的机器人专业博硕士生。
+This has produced a large number of robotics professional master's degree and doctoral degrees tudents who have not calculated the inverse kinematics of the robot.
 
-当然，并不是说「运动学逆解」、「轨迹插补」之类的知识有多难。我想强调的是，在大陆，一个学生只通过上课，无法掌握、甚至是无法接触到这些机器人学中非常基础的知识。
+Of course, this is not to say that "inverse kinematics", "trajectory interpolation" and so on are difficult knowledge.
+What I want to emphasize is that on the mainland, a student cannot master or even have access to these very basic knowledge of robotics only through classes.
 
-当然，这一情况在大陆比较普遍，而对于国外或者港台高校毕业的学生，基本上都没有这个问题。国外或者港台高校在机器人学这块的教学体系相对比较完整，基本上大作业都会覆盖主要的知识点，并且大都要求编程实现。
+Of course, this situation is more common in the mainland, and for foreign or Hong Kong and Taiwan university graduates, basically do not have this problem.
+The teaching system of robotics in universities abroad or in Hong Kong and Taiwan is relatively complete. Basically, the major assignments will cover the main knowledge points, and most of them require programming.
 
-虽然，大多数小伙伴都是「非科班出身」的，但是，根据我的经验，大陆的学生还是非常聪明的，基本只要得到一些简单的正确引导，就能很快通过自学掌握这些知识。所以，我们不妨来看看「非科班出身」如何学习机器人学吧。
+Although most of the students are "untrained", according to my experience, mainland students are very smart, and with some simple and correct guidance, they can quickly master these knowledge through self-study.
+So, let's take a look at how the "untrained" can learn robotics.
