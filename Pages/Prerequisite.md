@@ -1,40 +1,47 @@
-当然，先修知识会随着研究的深入而变化，尤其是数学，数学就像是写轮眼，看同一个石碑，不同层次的「写轮眼」所看到的内容也完全不同。
+Of course, the pre-study knowledge will change with the deepening of the study, especially mathematics. Mathematics is like writing the wheel eye. When looking at the same stone tablet, different levels of "writing the wheel eye" will see completely different content.
+
 
 <p align="center">
   <img width="800" src="../Pics/Sharingan.jpg"/>
 </p>
 
-只会加减乘除，可以从事机器人调试工程师；学了线性代数、微积分，就可以掌握运动学、动力学建模等基础内容；学了计算方法、凸优化、微分几何就可以参与一些辨识、规划、学习方面的工作。
+Can only add, subtract, multiply and divide, can be engaged in robot debugging engineer;
+Linear algebra, calculus, can master kinematics, dynamics modeling and other basic content;
+By learning computational methods, convex optimization, differential geometry, you can participate in some identification, planning, learning work.
 
-但是，由于机器人学涉及面广，不同方向所需要的基础知识也完全不同，如果一开始就陷入「先修知识」的泥潭中，可能就得不偿失了。
+But because robotics is so broad and requires very different basic knowledge in different directions, it may not pay to get bogged down in "pre-learning" at the beginning.
 
-所以，我认为，可以先列一些比较基础的先修知识，其他的在后续相应部分提及即可：
+Therefore, I think, we can list some basic knowledge first, and the others can be mentioned in the following corresponding parts:
 
-1. **基本的英文**：在机器人方面，目前基本上没有非常合适的中文教材可以推荐。写得深入浅出的教材大都是国外的，大家**必须**学会阅读英文教材。这个过程一开始肯定是痛苦的，但是，基本上坚持一个月就会习惯了。
 
-2. **学会使用 VPN**。原因同上，基本上有用的资料都需要通过 Goolge 或 Youtube 获取。
 
-3. **线性代数**：所有的空间变换、机器人相关计算都依赖于线性代数，甚至需要有一些基本的「线性空间」思维。对于线性代数，我首推 Prof. Gilbert Strang 的《Linear Algebra》，在 [Youtube](https://www.youtube.com/watch?v=hNDFwVVKVk0&list=PL221E2BBF13BECF6C) 和[网易公开课](http://open.163.com/special/opencourse/daishu.html)上可以找到视频。这门课一开始就引导大家从空间的角度看待问题，而不只强调如何计算。而且，网易公开课上有中文字幕，对于初学者也还算友好。
+1. **Basic English skills**：In terms of robotics, there is basically no very suitable Chinese textbook to recommend at present.The teaching materials that write profound and simple are mostly foreign, everybody**must**Learn to read English textbooks.This process must be painful at first, but, basically, after a month you will get used to it.。
 
-4. **微积分**：机器人里，所有涉及到导数、积分、优化的地方，都需要用到微积分。所以，这门数学课也是一开始就绕不开的。我没有太好的视频推荐，不妨也看看 Gilbert Strange 的[《微积分重点》](http://open.163.com/special/opencourse/weijifen.html) ([Highlights of Calculus](https://ocw.mit.edu/resources/res-18-005-highlights-of-calculus-spring-2010/))？
+2. **Learn to use VPN**。For the same reason, almost all useful materials need to be accessed via Google or YouTube。
 
-5. **理论力学**：机器人学就是每天与力打交道。但是一般机器人教材里都不会仔细推导空间变换、虚功原理、拉格朗日等力学理论，而且这些东西又相对抽象，很多初学者的自学过程就是被截杀在动力学章节的。当然，这部分我也没有太好的推荐资料，学堂在线上有清华高云峰老师的[《理论力学》](https://www.xuetangx.com/courses/TsinghuaX/20330334X/_/about)公开课，也可以参考一下。（但至少我当年上他的课总是犯困）。
+3. **Linear algebra**：All spatial transformations and robot-related calculations rely on linear algebra, and even some basic "linear space" thinking is required.For linear algebra, I'm going to recommend Prof. Gilbert Strang's 《Linear Algebra》，Here [Youtube](https://www.youtube.com/watch?v=hNDFwVVKVk0&list=PL221E2BBF13BECF6C) and [NetEase Open Class](http://open.163.com/special/opencourse/daishu.html)You can find the video here.The course starts by introducing you to the spatial perspective, not just the calculation.Also, the netease open class has Chinese subtitles, which is relatively beginner friendly.
+
+4. **Calculus**：Everything in the robot that involves derivatives, integrals, optimizations, you have to use calculus.Therefore, this math class is also from the beginning of the inevitable.I don't have a good video recommendation, so you might as well watch  Gilbert Strange's [《Calculus highlights》](http://open.163.com/special/opencourse/weijifen.html) ([Highlights of Calculus](https://ocw.mit.edu/resources/res-18-005-highlights-of-calculus-spring-2010/))？
+
+5. **Theoretical mechanics**：Robotics is about working with forces every day.However, mechanical theories such as space transformation, virtual work principle, Lagrange and so on are not carefully deduced in general robot textbooks, and these things are relatively abstract, so many beginners' self-learning process is cut off in the chapter of dynamics.Of course, I do not have good recommendation materials for this part. There is a teacher from Tsinghua University, Gao Yunfeng, on the school online [《theoretical mechanics》](https://www.xuetangx.com/courses/TsinghuaX/20330334X/_/about)Open class, also can refer to.(But at least I always felt sleepy in his classes.)。
 <!-- TODO: Improve <<theoretical mechanics>>  -->
    
-6. **Matlab or Python**：这两个都是非常容易上手，且非常方便数据可视化的编程语言。大家在学习机器人学的过程中，能非常容易地通过这类脚本语言实现一些算法，从而用于验证自己的推导结果。当然，这两部分只要掌握基本的矩阵操作和可视化操作就可以了。其他更高级的用法可以之后再学习。Coursera 上很容易找到这两门语言的入门课程 [Matlab](https://www.coursera.org/learn/matlab)、[Python](https://www.coursera.org/specializations/python)。
+6. **Matlab or Python**：Both are very easy to use programming languages that are very convenient for data visualization.
+In the process of learning robotics, you can easily implement some algorithms through this kind of scripting language, which can be used to verify your derivation results.
+Of course, these two parts only need to master the basic matrix operation and visualization operation can be.Other more advanced usages can be learned later.It's easy to find introductory courses in both languages on Coursera [Matlab](https://www.coursera.org/learn/matlab)、[Python](https://www.coursera.org/specializations/python)。
 
-7. **控制理论**：机器人学是离不开控制的，但是机器人学教材一般不会过多介绍这块。当然，目前大多数工业机器人都还是使用比较简单的算法。但是，作为研究者，有必要了解一些基本的控制理论，例如 PID、状态方程、可观性、可控性、李雅普诺夫、最优控制、一点点非线性控制与一点点智能控制等。这部分可以在 Youtube 上看看 [Brian Douglas](www.youtube.com/channel/UCq0imsn84ShAe9PBOFnoIrg) 的视频。
+7. **Theory of control**：Robotics is about control, but robotics textbooks don't usually talk about that much.Of course, most industrial robots are still using relatively simple algorithms.However, as a researcher, it is necessary to understand some basic control theories, such as PID, equation of state, observability, controllability, Lyapunov, optimal control, a little nonlinear control and a little intelligent control, etc.You can watch this part on YouTube [Brian Douglas](www.youtube.com/channel/UCq0imsn84ShAe9PBOFnoIrg) 。
 
 <p align="center">
   <img width="500" src="../Pics/IngenieriaElectrica.jpg"/>
 </p>
 
-8. **数字电路与模拟电路**：机器人是一门实践科学，只有当你把你推导的公式写成代码、并最终让实际机器人按照你的想法动起来的时候，才说明你掌握了相关知识。数电模电的知识可以让你对逻辑电路有个基本了解，不至于后面连为什么电机前面要加一个驱动器都不知道；同时，在身边没有实际机器人的情况下，自己搭个小电路做一些控制实验也是非常方便的。这块知识可以随便找本教材看看，例如我当时用的是唐庆玉老师的教材。
+8. **Digital and analog circuits**：Robotics is a practical science, and you only know it when you code the formulas you derive and get the actual robot to do what you want it to do.A knowledge of digital electrodynamics will give you a basic understanding of logic circuits, so that you will not even know why there is a driver in front of the motor.At the same time, when there is no actual robot around, it is also very convenient to build a small circuit to do some control experiments.This knowledge can look for this teaching material casually, what I use at that time for example is the teaching material of teacher tang qingyu.
 
-9. **一点点单片机**：要想搭建简单的控制电路，只有数电模电知识是不够的，还要能将这些知识转换成实际的电路，并且能运行控制代码，那么就需要会单片机。对于单片机，可以网上随便买一些带伺服电机控制教程的最小系统板，学学 Arduino 或 STM32，当然，如果能参加个 RoboMaster 或者飞思卡尔智能车大赛什么的是最好了，可以对嵌入式的各个模块有个基本了解。
+9. **A little chip microcomputer**：If you want to build a simple control circuit, it is not enough to only have the knowledge of digital electricity and electricity, but also to be able to convert these knowledge into the actual circuit, and can run the control code, then you need to know the SCM.For MCU, you can buy some minimum system board with servo motor control course online and learn Arduino or STM32. Of course, it is best if you can participate in Robomaster or Freescale intelligent car race, so that you can have a basic understanding of each embedded module.
 
-10. **Linux 和 C 语言**：现在有了电路部分，我们需要将公式代码变成电路指令，这就涉及嵌入式的编程了。这块建议学一点 C 语言。嵌入式对 C 的要求其实并不高，随便学点语法就够了，例如[《C语言入门》](https://akaedu.github.io/book/pt01.html)。但是，如果未来想做一些更加上层的工作，最好一开始就把 C 学好。学编程，Linux 是个不错的选择，所以，这时候，可以尝试安装个 Linux 系统，在上面学习 C 语言。
+10. **Linux and C language**：Now that we have the circuit part, we need to turn the formula code into the circuit instructions, which involves embedded programming.This piece of advice is to learn a little C.Embedded C requirements are actually not high, just learn some grammar enough, for example[《C语言入门》](https://akaedu.github.io/book/pt01.html)。However, if you want to do some higher level work in the future, you'd better learn C well from the beginning.Learn programming, Linux is a good choice, so at this time, you can try to install a Linux system, learn C language above.
 
-11.  **基本的3D设计**：在制作实验平台的时候，经常会遇到需要加工设计小零件的情况，这时候掌握一个3D设计软件可以大大提高开发速度，例如 SolidWorks 就是个不错的选择。配合上 3D 打印机之类的工具就可以实现快速原型设计了。（即使没有 3D 打印机，在网上也可以很容易找到 3D 打印服务，把你设计的 3D 文件发过去就可以了）。
+11.  **Basic 3D design**：In the production of experimental platform, we often encounter the need to process and design small parts. At this time, mastering a 3D design software can greatly improve the development speed, such as SolidWorks is a good choice.With tools such as a 3D printer, rapid prototyping can be achieved.(Even if you don't have a 3D printer, it's easy to find a 3D printing service online and just send in your designs.)
 
-上面这些知识，基本是一个自动化专业或者机电专业大三学生应该达到的水平。如果对上述几部分有了基本了解，就可以开始看机器人学的知识了。
+The above knowledge is basically an automation major or electromechanical major junior students should achieve the level.Once you have a basic understanding of the above sections, you can begin to look at robotics.
