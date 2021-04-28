@@ -1,16 +1,17 @@
-至此，你已经是一个不错的机器人工程师了。但是，如果你想从事研发工作，就需要学习更多专业知识。当然，这部分就跟大家的研究方向关系比较密切了，我没法一一细说。只大概介绍一些。
+So far, you've been a good robot engineer.  However, if you want to work in research and development, you need to learn more specialized knowledge.  Of course, this part is closely related to your research direction, I can not go into detail.  Just a general introduction.  
 
-另外，非常建议入手一本《Springer Handbook of Robotics》<sup>[2]</sup>。接触一个新的领域时，在 Handbook 里找到相应的章节，通过它了解基本的大纲，并利用提供的参考文献快速补齐知识。
 
-### 5.1 数学
+In addition, it is highly recommended to get one book named《Springer Handbook of Robotics》<sup>[2]</sup>。When dealing with a new field, find the corresponding chapter in Handbook, understand the basic outline through it, and use the provided references to quickly fill in the knowledge.  
 
-这时候，你的数学基础基本不允许你更进一步了。所以，你需要补充数学知识。
+### 5.1 math
 
-- **数值计算方法**：很多时候，我们都是通过计算机来实现算法功能的，所以，你必须了解基本的数值计算方法，如数值微分、数值积分等。这部分可以看《Numerical Methods for Engineers》<sup>[3]</sup>
+At this point, your basic math doesn't allow you to go any further.  So, you need to supplement your math knowledge.  
 
-- **凸优化**：这个世界很多问题都不容易找到解析解，我们得用优化方法来计算。所以，你必须了解如何建立优化模型，并知道如何用代码进行求解。这里，我推荐 Stanford 的公开课[《Convex Optimization》](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/about)
+- **numerical computation method **：Most of the time, we are using computers to implement the algorithm function, so you must understand the basic numerical calculation methods, such as numerical differentiation, numerical integration, etc.  You can look at 《Numerical Methods for Engineers》<sup>[3]</sup>
 
-- **李群李代数**：优化方法经常要使用梯度信息，但是，你发现很多时候你不知道怎么定义梯度。李群李代数是一个非常经典的数学工具，可以非常方便地描述 SO(3)、SE(3) 空间中的对象。到这里，你之前对于四元数、角速度之类的疑问将一扫而空。这部分的学习资料，我会在后面补充。
+- **convex optimization**：Many of the world's problems are not easy to find analytical solutions, we have to use optimization methods to calculate.  So, you have to know how to model optimization and know how to do it in code.  Here, I recommend the Stanford Open Course  [《Convex Optimization》](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/about)
+
+- **Lie groups and Lie algebras**：Optimization methods often use gradient information, but sometimes you find that you don't know how to define a gradient.  Lie group Lie algebra is a very classical mathematical tool, which can describe the objects in SO(3) and SE(3) space very conveniently.  At this point, any questions you might have about quaternions, angular velocity, etc., will disappear.  This part of the study materials, I will supplement later. 
 
 ### 5.2 Modern Robotics
 
@@ -18,104 +19,106 @@
   <img width="500" src="../Pics/ModernRobotics.jpg"/>
 </p>
 
-李群李代数对于很多工科学生可能一时无法接受。这里，我推荐从 Modern Robotics 开始，这是一本面向本科生的教材，非常浅显。
+Lie groups and Lie algebras may not be readily acceptable to many engineering students.  Here, I recommend starting with Modern Robotics, which is a very simple textbook for undergraduates.
 
-你可以在[网上](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)找到它的所有信息，Coursera 上也有对应的课程：[《Modern Robotics》](https://www.coursera.org/specializations/modernrobotics)。
+You can find it [internet](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)，There are also courses on Coursera：[《Modern Robotics》](https://www.coursera.org/specializations/modernrobotics)。
 
-上完这门课，你能掌握旋量（Screw）这一全新的建模方式，同时，你会发现机器人运动学、动力学建模变得如此简单、干净。
+By the end of this course, you will be able to master the new modeling method of Screw, and at the same time, you will find that the modeling of robot kinematics and dynamics becomes so simple and clean.
 
-这时候，你已经触碰到了一点点李群李代数。之后就可以去看一些针对工科生的李群李代数教材，如[《Notes on Differential Geometry and Lie Groups, I & II》](http://www.cis.upenn.edu/~jean/gbooks/manif.html)
+At this point, you've touched a little bit of Lie groups and Lie algebra.  Then you can go to see some Lie Group Lie Algebra textbooks for engineering students, such as [《Notes on Differential Geometry and Lie Groups, I & II》](http://www.cis.upenn.edu/~jean/gbooks/manif.html)
 
-### 5.3 控制
+### 5.3  control 
 
-这时候，你可能已经尝试搭建过一些机器人平台，了解了一些基本的控制理论。但是，你发现实际的机器人并不理想，动力学模型可能非常不精确。于是，你需要做机器人的**参数辨识**。于是，你可以去看 Khalil 的教材《Modeling, identification and control of robots》<sup>[4]</sup>。其中，你需要了解各种滤波算法（计算加速度）、各种数值优化算法。而且，如果需要对机器人的运动学参数进行标定，你会发现李群李代数可以非常方便地定义各种相关的雅可比。
+At this point, you've probably tried to build some robotic platforms and learned some basic control theory.  However, you find that the actual robot is not ideal, and the dynamics model can be very imprecise.  So, you need to get a robot's **parameter identification **。So, you can go to Khalil's textbook《Modeling, identification and control of robots》<sup>[4]</sup>.Among them, you need to know various filtering algorithms (calculating acceleration), various numerical optimization algorithms.  Moreover, if you need to calibrate the kinematic parameters of the robot, you will find that the Lie group Lie algebra is very convenient to define all kinds of related Jacobians.
 
-现在，你有了一个相对精确的动力学模型，但是你发现，在给机器人控制器做轨迹规划的时候，需要给出速度、加速度约束。你感觉这其中有什么不对。是的，机器人系统中实际上并不存在什么速度、加速度约束，我们所有的操作都是针对电机力矩的。也就是说，我们只有力矩约束。
+Now, you have a relatively accurate dynamic model, but you find that you need to give velocity and acceleration constraints when you plan the trajectory of the robot controller.  You sense there's something wrong with that.  Yes, there are no actual speed and acceleration constraints in the robot system. All of our operations are directed at the motor torque.  In other words, we only have torque constraints.
 
-那么，问题来了：在力矩约束下，如何让机器人实现最快的运动。于是你就入了**最优控制**的坑。在这里，各种数值优化方法将非常有用。
+So, the question is: how to make the robot realize the fastest movement under the torque constraint.  Then you fall into the pit of **optimal control**.Here, various numerical optimization methods will be very useful.
 
-现在你能把单独的一个机器人控制好了，但你发现，机器人一旦跟环境发生接触，只用机器人模型就不够了。你需要对环境进行建模。但是，环境是无法精确建模的。于是，你开始学各种**力控**、**阻抗控制**之类的内容。相应地、你就可以实现一些所谓协作机器人的功能了:[《听说现在协作机器人很火，所以我也做了1/7个》](https://mp.weixin.qq.com/s/hkZjZItqyfwG6k0cwRm9kA)
+Now you can control a single robot, but you find that once the robot is in contact with the environment, it's not enough to just have a model of the robot.  You need to model the environment.  However, the environment cannot be accurately modeled.  So you start learning all kinds of stuff like **force control**, **impedance control**, etc.  In turn, you can implement some of the functions of so-called collaborative robots:[《I heard that collaborative robots are all the rage right now, so I made 1/7 of them》](https://mp.weixin.qq.com/s/hkZjZItqyfwG6k0cwRm9kA)
 
 <p align="center">
   <img width="500" src="../Pics/CollisionDetection.gif"/>
 </p>
 
-### 5.4 运动规划
+### 5.4 motion planning
 
-现在，你能让机器人按照你的要求运动了。但是，你感觉机器人还是太难用了，必须人工指定经过的路径点，否则机器人可能就会与环境发生碰撞。你想，有没有可能让机器人自己找到这些路径点。
+Now, you can make the robot do what you want.  However, you feel that the robot is still too difficult to use, you have to manually specify the path points to go through, otherwise the robot may collide with the environment.  You wonder, is it possible for the robot to find these path points on its own.
+ 
+ So you move into the area of motion planning.
 
-于是，你来到了运动规划的领域。
+A natural thought, of course, is whether it is possible to construct an objective function directly and calculate the desired trajectory in an optimized way.  But sometimes the world is not so lovely.  The motion planning problem is usually a non-convex problem, which cannot be solved directly by optimization.  Therefore, for the manipulator, there can be a variety of sample-based algorithms;  Of course, some people approximate it to a number of convex problems to optimize the solution, in a relatively simple scene the effect is quite good.
 
-当然，一个很自然的想法是，有没有可能直接构建一个目标函数，用优化的方法计算出需要的轨迹。但是，世界有时候并没有那么可爱。运动规划问题常常是一个非凸问题，无法优化直接求解。所以，对于机械臂，可以有各种 Sampling-based 算法；当然，也有人将其近似成多个凸问题进行优化求解，在比较简单的场景下效果还算不错。
-
-运动规划的大致介绍可以看我以前写过的文章：[《运动规划 | 简介篇》](https://mp.weixin.qq.com/s/_fE760XxFlvrkzYEpslYvA)。
+For a general introduction to motion planning, see my previous article:[《Motion planning | profile》](https://mp.weixin.qq.com/s/_fE760XxFlvrkzYEpslYvA)。
 
 <p align="center">
   <img width="500" src="../Pics/PlanningBooks.jpg"/>
 </p>
 
-更详细的介绍最好看教材，如《Principles of Robot Motion》<sup>[5]</sup> 和《Planning Algorithms》<sup>[6]</sup> 都是不错的教材。
+More detailed introduction to the best look at the textbook, such as《Principles of Robot Motion》<sup>[5]</sup> and《Planning Algorithms》<sup>[6]</sup> They are all good textbooks.
 
-另外，这部分一定要配合着编程来做。[The Open Motion Planning Library](http://ompl.kavrakilab.org/) 是个不错的参考，相信你在学 ROS 的时候也或多或少了解过一些。
+In addition, this part must be done in conjunction with programming.[The Open Motion Planning Library](http://ompl.kavrakilab.org/) It is a good reference, I believe you have learned more or less about ROS when you are studying ROS.
 
-只要你理解得足够深入，便会理解前面李群李代数的作用。例如：
+If you understand it deep enough, you will understand what Lie groups and Lie algebras do.  Such as:
 
-（1）运动规划是在 Configuration Space 里进行的，而大多数常见机构的 Configuration Space 都是一个 Lie Group：多关节机器人的关节空间（Torus(n)），无人机（SE(3)），机器人末端操作物体的相关约束（SE(3)）。于是，我们只要定义各种 Lie Group 的基本性质，就可以用统一的规划算法来进行规划了。具体可以看 Ompl 里 State space 的使用。
 
-（2）当我们的规划涉及到一些约束，如让机器人末端保持水平（拿着一杯水）。一种方法是用传统的方法。如 OpenRave 里的一个实现：[ConstraintPlanning](http://openrave.org/docs/0.8.2/openravepy/examples.constraintplanning/)， 在关节空间随机采样一个点，然后投影到最近的任务空间上，之后用 Jacobian 迭代的方式将随机点连接到 RRT 树上。
+(1) Sport planning is carried out in the Configuration Space, while the Configuration Space of most common institutions is a Lie Group:  Joint space of a multi-joint robot (Torus(n)), unmanned aerial vehicle (SE (3)), and related constraints of an object operated by the end of the robot (SE (3)).  Therefore, as long as we define the basic properties of various Lie groups, we can use a unified planning algorithm to carry out planning.  Specifically, you can see the use of State space in Oompl.
+
+
+(2) When our planning involves some constraints, such as keeping the end of the robot horizontal (holding a glass of water).  One way is to do it the old-fashioned way.  For example, an implementation in OpenRave:[ConstraintPlanning](http://openrave.org/docs/0.8.2/openravepy/examples.constraintplanning/)，A random point is sampled in joint space, projected onto the nearest task space, and then the random points are connected to the RRT tree in a Jacobian iteration.  
 
 <p align="center">
   <img width="300" src="../Pics/TaskConstrainedRRT.jpg"/>
 </p>
 
-但是，我们可以从另一个角度看问题。机器人的末端姿态就是一个 SE(3) 李群。保持末端水平，可以认为是一个 R3 空间与 SO(2) 空间的半直积，这也是一个李群。于是，我们可以直接在李群内或者 Tangent Space 上跑一个 RRT，例如 Tangent Bundle RRT<sup>[7]</sup> 与 AtlasRRT<sup>[8]</sup>
+But there's another way to look at it.  The terminal attitude of the robot is a SE(3) Lie group.  Keeping the ends horizontal, you can think of it as a semi-direct product of an R3 space with SO(2) space, which is also a Lie group.  So, we can run an RRT directly within the Lie group or across the Tangent Space, for example : Tangent Bundle RRT<sup>[7]</sup> 与 AtlasRRT<sup>[8]</sup>
 
 <p align="center">
   <img width="500" src="../Pics/AtlasRRT.jpg"/>
 </p>
 
-### 5.5 机器学习
+### 5.5 machine learning
 
-前面很多工作都是在做建模+辨识的工作。实际上还有一大类工作是基于数据的，也即，给一个通用模型，用数据进行学习拟合。也就是大家常说的机器学习了。
+Much of the previous work is about modeling + identification.  There's actually a whole other class of work that is data-based, that is, to give a general model, to use data for learning fit.  It's called machine learning.
 
-对于此，我个人的学习路径如下：
+For this, my personal learning path is as follows:
 
-- Coursera上吴恩达的[《机器学习》](https://www.coursera.org/learn/machine-learning)，了解基本的机器学习内容。
+- Ng's  [《Machine Learning,on Coursera》](https://www.coursera.org/learn/machine-learning)，Understand the basics of machine learning.
 
-- Geoffrey Hinton 的[《Neural Networks for Machine Learning》](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9)，之前是在 Coursera 上看的，现在似乎只能在 Youtube 上找到了。这门课基本可以把几种经典的神经网络过一遍。
+- Geoffrey Hinton 的[《Neural Networks for Machine Learning》](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9)，It used to be on Coursera, but now it seems you can only find it on YouTube.  In this course, we can basically go through some classical neural networks.
 
-- 各种开源平台。有了前面的基础，也在 Matlab 中实现过几种经典机器学习算法，你就可以去尝试一些深度学习开源平台了，如 [TensorFlow](https://www.tensorflow.org/)。做机器学习的人太多了，所以资料也非常多，在网上非常容易自学。
+- Various open source platforms.  With this in mind, and having implemented several classic machine learning algorithms in Matlab, you are ready to try out some deep learning open source platforms, such as [TensorFlow](https://www.tensorflow.org/).There are a lot of people doing machine learning, so there's a lot of material, so it's very easy to learn on the Internet.
 
-当然，我们要知道，我们学机器学习，并不是为了转到 DL 方向上，而是用它来为机器人研究提供工具的：
+Of course, it's important to remember that we didn't learn machine learning to switch to DL, but to use it to provide tools for robotics research:
 
-- 智能控制：相信学习过智能控制的小伙伴，应该还记得小脑模型之类的网络在控制中的应用；
+- Intelligent control: I believe that those who have learned intelligent control should remember the application of network such as cerebellar model in control;
 
-- 建模：对于一些不好建模的地方，有时候不妨试试机器学习的方法，例如，用神经网络拟合摩擦力；
+- Modeling: For some difficult modeling, sometimes you can try machine learning methods, such as using neural networks to fit friction;
 
-- 视觉：机器人经成需要跟视觉结合在一起，而 DL 在视觉领域发展迅速，有时候借用这一工具，可以非常快地搭建实验原型；
+- Vision: Robots need to be combined with vision, and DL is developing rapidly in the field of vision. Sometimes using this tool, experimental prototypes can be built very quickly.
 
-- 强化学习：这个下章介绍。
+- Reinforcement learning: this is introduced in the next chapter.
 
-### 5.6 强化学习
+### 5.6 reinforcement learning
+If you have studied reinforcement learning, you will be impressed by its minimalist theory: all theories derive from a Bellman equation. Moreover, reinforcement learning is very intuitive. Therefore, many people believe that reinforcement learning is the future of robots.
 
-如果研究过强化学习，肯定会被其极简的理论所折服：所有的理论衍生自一个 Bellman equation。而且，强化学习非常符合人的直觉。因此，很多人认为强化学习是机器人的未来方向。
+I have no further comment on this. I'll just give you a rough introduction to reinforcement learning.
 
-对此，我不做过多评论。我只大概介绍如何入门强化学习。
+First of all, reading books. Sutton 's《Introduction to reinforcement learning》<sup>[9]</sup> It's kind of a required Bible reading.
 
-首先，就是看书。Sutton 的《Introduction to reinforcement learning》<sup>[9]</sup> 可以说是必读圣经了。
+You can find the Python version of the algorithm on GitHub [Python Implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
 
-你可以在 Github 找到 Python 版本的算法实现 [Python Implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
+Reading Sutton's book, you can learn step-by-step how to derive methods such as Dynamic Programming, Monte Carlo, TD Learning from the original Bellman equations.
 
-阅读 Sutton 的书，你可以一步步了解如何从最初的 Bellman 方程推导出 Dynamic Programming、Monte Carlo、TD Learning 等方法。
+You know reinforcement learning is learning to get a lookup table from State to Action/Value through trial and error.
 
-你知道了强化学习就是要通过不断尝试来学习得到一个从 State 到 Action/Value 的查找表。
+So, you say, well, is it possible to simplify this lookup table, and so, you know that there's Function Approximation. If this approximation function is a neural network, then it is the popular Deep Reinforcement Learing now.
 
-于是，你就想，有没有可能简化这个查找表，于是，你知道了有 Function Approximation。如果这个近似函数是神经网络，那么就是现在很火的 Deep Reinforcement Learing 了。
+Of course, none of this matters. It is important to understand Markov Decision Processes. You will find that it can be used to solve not only motion planning problems (DP ≈ Dijkstra, Monte Carlo ≈ RRT), but also task planning problems.
 
-当然，这些不重要。重要的是理解 Markov Decision Processes。你会发现，它不仅可以用来解决运动规划问题（DP ≈ Dijkstra、Monte Carlo ≈ RRT），还可以用来解决任务规划问题。
 
-### 5.7 最新论文
 
-至此，你已经能够阅读绝大多数最新的论文了。所以，你应该关注类似 RSS、ICRA、IROS 等相关会议，了解机器人领域的最新进展；通过 IJRR、TRO 等期刊学习最新的理论。
+### 5.7 The latest paper
+At this point, you should be able to read most of the latest papers. So you should follow conferences like RSS, ICRA, IROS, etc., to keep abreast of the latest developments in robotics. Learn the latest theories through IJRR, TRO and other periodicals.
 
-当然，你也可以通过 Google Scholar 订阅相应的关键词，它会不定期将最新的论文推送到你的邮箱。
+Of course, you can also subscribe to Google Scholar and it will send the latest papers to your email occasionally.
