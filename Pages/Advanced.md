@@ -1,7 +1,7 @@
 So far, you've been a good robot engineer.  However, if you want to work in research and development, you need to learn more specialized knowledge.  Of course, this part is closely related to your research direction, I can not go into detail.  Just a general introduction.  
 
 
-In addition, it is highly recommended to get one book named《Springer Handbook of Robotics》<sup>[2]</sup>。When dealing with a new field, find the corresponding chapter in Handbook, understand the basic outline through it, and use the provided references to quickly fill in the knowledge.  
+In addition, it is highly recommended to get one book named《Springer Handbook of Robotics》<sup>[2]</sup>.When dealing with a new field, find the corresponding chapter in Handbook, understand the basic outline through it, and use the provided references to quickly fill in the knowledge.  
 
 ### 5.1 math
 
@@ -21,7 +21,7 @@ At this point, your basic math doesn't allow you to go any further.  So, you nee
 
 Lie groups and Lie algebras may not be readily acceptable to many engineering students.  Here, I recommend starting with Modern Robotics, which is a very simple textbook for undergraduates.
 
-You can find it [internet](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)，There are also courses on Coursera：[《Modern Robotics》](https://www.coursera.org/specializations/modernrobotics)。
+You can find it [internet](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)，There are also courses on Coursera：[《Modern Robotics》](https://www.coursera.org/specializations/modernrobotics).
 
 By the end of this course, you will be able to master the new modeling method of Screw, and at the same time, you will find that the modeling of robot kinematics and dynamics becomes so simple and clean.
 
@@ -29,7 +29,7 @@ At this point, you've touched a little bit of Lie groups and Lie algebra.  Then
 
 ### 5.3  control 
 
-At this point, you've probably tried to build some robotic platforms and learned some basic control theory.  However, you find that the actual robot is not ideal, and the dynamics model can be very imprecise.  So, you need to get a robot's **parameter identification **。So, you can go to Khalil's textbook《Modeling, identification and control of robots》<sup>[4]</sup>.Among them, you need to know various filtering algorithms (calculating acceleration), various numerical optimization algorithms.  Moreover, if you need to calibrate the kinematic parameters of the robot, you will find that the Lie group Lie algebra is very convenient to define all kinds of related Jacobians.
+At this point, you've probably tried to build some robotic platforms and learned some basic control theory.  However, you find that the actual robot is not ideal, and the dynamics model can be very imprecise.  So, you need to get a robot's **parameter identification **.So, you can go to Khalil's textbook《Modeling, identification and control of robots》<sup>[4]</sup>.Among them, you need to know various filtering algorithms (calculating acceleration), various numerical optimization algorithms.  Moreover, if you need to calibrate the kinematic parameters of the robot, you will find that the Lie group Lie algebra is very convenient to define all kinds of related Jacobians.
 
 Now, you have a relatively accurate dynamic model, but you find that you need to give velocity and acceleration constraints when you plan the trajectory of the robot controller.  You sense there's something wrong with that.  Yes, there are no actual speed and acceleration constraints in the robot system. All of our operations are directed at the motor torque.  In other words, we only have torque constraints.
 
