@@ -1,4 +1,4 @@
-For the introductory part, it's really about figuring out how to get an industrial robot moving.  It's a very well-studied area, and if you look at textbooks from the last century, I recommend John Craig's textbook   《Introduction to Robotics: Mechanics and Control》<sup>[1]</sup>，在 [Youtube](https://www.youtube.com/watch?v=0yD3uBshJB0&list=PL64324A3B147B5578) 和[网易公开课](http://open.163.com/special/opencourse/robotics.html)You can find a video of Oussama Khatib at Stanford, which is pretty much in line with Craig's textbook.
+For the introductory part, it's really about figuring out how to get an industrial robot moving.  It's a very well-studied area, and if you look at textbooks from the last century, I recommend John Craig's textbook   《Introduction to Robotics: Mechanics and Control》<sup>[1]</sup>，在 [Youtube](https://www.youtube.com/watch?v=0yD3uBshJB0&list=PL64324A3B147B5578) 和[NetEase Open Course](http://open.163.com/special/opencourse/robotics.html)You can find a video of Oussama Khatib at Stanford, which is pretty much in line with Craig's textbook.
 
 <p align="center">
   <img width="300" src="../Pics/CraigBook.jpg"/>
@@ -117,7 +117,7 @@ Now, when you have the Jacobian, you realize that you know how to control the en
 
 <!-- TODO: update this pic -->
 
-Yes, that's how the kinematics of a robot is numerically calculated, and you can use this method to write a general algorithm for solving the kinematics of a robot.  See my answer on zhihu for details   [MATLAB机器人工具箱中机器人逆解是如何求出来的](https://www.zhihu.com/question/41673569/answer/129670927)。
+Yes, that's how the kinematics of a robot is numerically calculated, and you can use this method to write a general algorithm for solving the kinematics of a robot.  See my answer on zhihu for details   [How to find the inverse solution of robot in MATLAB robot toolbox](https://www.zhihu.com/question/41673569/answer/129670927)。
 
 Beginners **must** hand to implement this algorithm, or some pit need to step on.
 
