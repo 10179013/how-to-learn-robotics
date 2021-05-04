@@ -5,7 +5,7 @@ You can read this book in GitBook ： [How to Learn Robotics](https://qiu6401.gi
 You also can read this book in Github, [First Edition](https://github.com/qqfly/how-to-learn-robotics/tree/backup/all-in-one).
 
 
-You also can read this book in Github:[English edition] (https://github.com/10179013/how-to-learn-robotics/tree/dev/js.wu/EnglishTrans-1/Pages)
+You also can read this book in Github:[English edition](https://github.com/10179013/how-to-learn-robotics/tree/dev/js.wu/EnglishTrans-1/Pages)
 
 Since written time is short, there must have some omissions. So as the book become a open source project,everyone can change anything at any time. [Pull Request](https://github.com/qqfly/how-to-learn-robotics/pulls)；If you have any question, please don't hesitate to ask : [Issues](https://github.com/qqfly/how-to-learn-robotics/issues).
 
