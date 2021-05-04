@@ -2,7 +2,7 @@
 
 You can read this book in GitBook ： [How to Learn Robotics](https://qiu6401.gitbook.io/how-to-learn-robotics)
 
-You also can read this book in Github, [First Edition](https://github.com/qqfly/how-to-learn-robotics/tree/backup/all-in-one).
+You also can read this book in Github: [First Edition](https://github.com/qqfly/how-to-learn-robotics/tree/backup/all-in-one).
 
 
 You also can read this book in Github:[English edition](https://github.com/10179013/how-to-learn-robotics/tree/dev/js.wu/EnglishTrans-1/Pages)
