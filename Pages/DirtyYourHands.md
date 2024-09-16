@@ -1,34 +1,37 @@
-看完 Craig 的书后，你应该对工业机器人的原理有了一个大概的概念，但是，你缺乏实际动手经验，不清楚如何将书上的东西应用到实际机器人上。机器人毕竟是一个实践性的学科，一直停留在理论，不仅无用、而且无趣。
+After reading Craig's book, you should have a general idea of how industrial robots work, but you have little hands-on experience with how to apply what you read in the book to real robots.  Robotics, after all, is a practical subject. It remains theoretical, not only useless, but also uninteresting.
+
 
 **Get your hands dirty!**
 
-### 4.1 动手
+### 4.1 start work
 
-如果是本科生的话，非常建议参加一些比赛，如 RoboMaster、飞思卡尔智能车大赛、电子设计大赛等；也可以加入学校的一些科技组织，例如清华的天空工厂。主要是熟悉各种电子电路、培养动手能力。
+If you are an undergraduate student, it is highly recommended to participate in some competitions, such as Robomaster, Freescale intelligent car competition, electronic design competition, etc. You can also join some of the university's science and technology organizations, such as Tsinghua's Sky Factory. Mainly be familiar with all kinds of electronic circuits, cultivate hands-on ability.
 
-但是，以我的观察，很多科技比赛大牛，在理论学习上往往比较弱。这主要是因为科技比赛强调的是系统能力，决定比赛结果的往往是一些小 tricks，而非理论知识；而且，比赛容易让人产生一种虚假的充实感，每天都很忙碌，但是可能只是在重复低级工作。这两个原因很容易让人陷入 local minima，无法在理论方面更进一步。
+However, in my observation, many science and technology competition masters are often weak in theoretical study. This is mainly because technology competitions are about systematic abilities, and it's little tricks rather than theoretical knowledge that determines the outcome of competitions. Also, the game tends to create a false sense of fulfillment, of being busy every day, but perhaps just repeating the menial tasks. These two reasons can easily lead people to fall into local minima, and it is impossible to make further progress in theory.
 
-所以，我有个不成熟的小建议：参加比赛和学生科技活动的话，有过两次完整的经历就够了。之后应该迅速将重点转向理论学习。
+So here's my half-baked tip: for competitions and student tech events, two full experiences are enough. Then the focus should quickly shift to theoretical learning.
 
-如果身边有可以玩的机器人硬件，也可以尝试玩一玩，或者在 RobotStudio/Vrep/Gazebo 里玩仿真的机器人。
+If you have robot hardware nearby, you can also play with it, or play with realistic robots in RobotStudio/ VREP /Gazebo.
 
 ### 4.2 Penn's Robotics Specialization
 
-在此之后，不妨抽出几个月时间，看看 Coursera 上宾夕法尼亚大学的 [Robotics](https://www.coursera.org/specializations/robotics) 专项课程。这个专项课程与机械臂或者工业机器人关系不大，但是由于机器人很多方面是相通的，所以非常建议看一看。
-
-- Aerial Robotics：这门课主要是介绍四旋翼无人机的控制问题，其中的轨迹规划、姿态描述、控制等对机械臂的学习非常有帮助。而且，这门课的作业质量也非常高，提供了基于 Matlab 的数值仿真模块，可以让初学者直观地看到自己代码的控制效果。
-
-- Computational Motion Planning：这门课的水平感觉不如前一个，但是通过这门课可以大概知道机器人里有 Motion Planning 这个方向，同时大作业也包括了手写 A*、PRM、Potential Fileds 等基本的 Motion Planning 算法，同时可以大概了解一下 Collision Checking 的基本原理。
-
-- Mobility：这部分主要是介绍足式机器人的控制问题。通过这门课，一方面可以大致了解足式机器人控制的发展脉络，这样看起 Boston Dynamics 的视频也不会那么一脸懵逼了。同时，更重要的是，掌握机器人建模与控制的关系：一个简化的模型，也可能对控制起非常大帮助。
-
-- Perception：这门课质量非常不错，基本是介绍相机模型、多视几何之类的内容。这方面内容可以对大家未来从事 SLAM、3D 视觉、标定等方面的研究非常有帮助。学完之后，大家就可以做出类似[《AR原理演示》](https://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&mid=2652786307&idx=1&sn=e71bbca67c7fa69081e863b62b9fd5b4#rd)文章中的效果了：
+After that, you might as well take out a few months time, look at the university of Pennsylvania on Coursera [Robotics](https://www.coursera.org/specializations/robotics)  special course.  This special course is not related to mechanical arm or industrial robot, but because robots are interrelated in many aspects, it is highly recommended to take a look.
+ 
+ - Aerial Robotics: This course mainly introduces the control problem of quadrotor UAV, among which trajectory planning, attitude description and control are very helpful to the learning of manipulator arm.  Moreover, the homework quality of this course is also very high, providing numerical simulation module based on MATLAB, which can let beginners intuitively see the control effect of their code.
+ 
+ - Computational Motion Planning:  The level of this course is not as good as the previous one, but through this course, we can know that there is Motion Planning in the robot. Meanwhile, the homework also includes basic Motion Planning algorithms such as handwritten A*, PRM, Potential Fileds, etc.  You can also get an overview of the basics of Collision Checking.
+ 
+ -Mobility: This part mainly introduces the control problem of the foot robot.  Through this course, on the one hand, I can have a general understanding of the development of foot robot control, so that I won't be so confused when I watch the video of Boston Dynamics.  At the same time, more importantly, understanding the relationship between robot modeling and control: a simplified model may also be very helpful to control.
+ 
+ -Perception: This is a very good class, basically introducing camera models, multi-view geometry, things like that.  This content can be very helpful for your future research in SLAM, 3D vision, calibration and other aspects.  And when you're done,  You can make similar  [《the AR principle demonstration》](https://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&mid=2652786307&idx=1&sn=e71bbca67c7fa69081e863b62b9fd5b4#rd)
+ 
+ 
 
 <p align="center">
   <img width="400" src="../Pics/AR.gif"/>
 </p>
 
-- Estimation and Learning：这门课从高斯分布开始，介绍了 Kalman Filter、Particle Filter 等在机器人状态估计中非常有用的工具。而且，这门课的大作业会让你从零开始编写 2D 地图重建的程序，你可以知道如何利用激光传感器信息获得下面这样的 2D 地图。
+- Estimation and Learning：This course starts from Gaussian distribution, and introduces Kalman Filter, Particle Filter and other tools that are very useful in robot state estimation.  Also, the course's major assignment will allow you to write a 2D map reconstruction program from scratch, so you can see how to use laser sensor information to get 2D maps like the following.
 
 <p align="center">
   <img width="500" src="../Pics/Mapping.jpg"/>
@@ -36,26 +39,30 @@
 
 ### 4.3 ROS
 
-到现在为止，你对机器人的基础知识有了一个比较完整的脉络，而且，也用 Matlab 实现了一些有趣的算法。但是，你发现，机器人是一个非常大的系统，作为初学者，不太可能从头开始一步步搭建机器人所需的各个算法模块。这时候，你就应该开始拥抱伟大的开源世界了。
+So far, you have a more complete context of the basic knowledge of the robot, and also use MATLAB to achieve some interesting algorithms.  However, as you find out, the robot is a very large system, and as a beginner, it is not possible to start from scratch and build the various algorithm modules required by the robot step by step.  It's time to embrace the great open source world.
+ 
+ As many of you may know, there's an open source project called the Robotic Operating System  [(Robot Operating System, ROS)](https://wiki.ros.org/)。
 
-很多人可能知道，有一个叫做机器人操作系统的开源项目 [(Robot Operating System, ROS)](https://wiki.ros.org/)。
+There are probably a lot of tutorials online for learning ROS.  However, I feel that many students majoring in electromechanical and automation are not suitable for directly starting to watch ROS.  Because they lack basic knowledge of Linux and C++.  Therefore, I recommend following the following steps:
 
-对于学习 ROS，网上可能有不少教程了。但是，我感觉，很多机电、自动化方向的学生并不适合直接开始看 ROS。因为他们缺乏基本的 Linux、C++ 知识。所以，我推荐按照如下步骤进行学习：
 
-- **Linux**：如果完全没有 Linux 开发经验，我建议可以先安装 Ubuntu 系统，然后看 [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/) ，熟悉基本的 Linux 使用方法。
+- **Linux**：If no Linux development experience, I suggest install Ubuntu system first, and then look at [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/),  Familiar with basic Linux usage.  
 
-- **Github**：ROS 的大多数项目都是托管在 [Github](https://github.com/) 上的。所以，非常有必要学会使用 Github，学会用 git 管理自己的代码。而且也可以为开源项目做些修改。例如可以像我一样只是[删除多余的分号](https://github.com/stack-of-tasks/pinocchio/pull/672)。
+- **Github**：Most of ROS's projects are hosted on [GitHub](https://github.com/).  Therefore, it is very necessary to learn to use GitHub, learn to manage their own code with Git.  It can also be modified for open source projects.  For example, you can just  as I did [remove extra semicolons] (https://github.com/stack-of-tasks/pinocchio/pull/672).
 
-- **C++ 基础**：如果你没有系统学习过 C++，建议先把这部分补齐，因为 ROS 的主要代码都是 C++ 实现的。这里，我推荐学堂在线上清华大学郑莉老师的课程[《C++语言程序设计基础》](http://www.xuetangx.com/courses/course-v1:TsinghuaX+00740043X_2015_T2+sp/about)和[《C++语言程序设计进阶》](http://www.xuetangx.com/courses/course-v1:TsinghuaX+00740043_2x_2015_T2+sp/about)。当然，学习 C++ 的时候就可以在 Ubuntu 下进行，安装一个 [Visual Studio Code](https://code.visualstudio.com/) 是个不错的选择。
 
-- **数据结构**：其实，上面的基础已经足够你学习 ROS 了，但是，为了未来的学习，可以在适当时候学习一些数据结构的知识。数据结构的话，我推荐学堂在线上清华邓俊辉老师 [《数据结构(上)》](http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240184+sp/about)与[《数据结构(下)》](http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240184_2X+sp/about)。
+- **Basic C Programming**：If you have not systematically studied C++, it is recommended to make up this part first, because the main code of ROS is implemented in C++. Here, I recommend the school tsinghua university online Zheng Li teacher of course [c + + language program design basis](http://www.xuetangx.com/courses/course-v1:TsinghuaX+00740043X_2015_T2+sp/about) and [c + + Advanced language program design] ((http://www.xuetangx.com/courses/course-v1:TsinghuaX+00740043_2x_2015_T2+sp/about)). Of course, when you learn c + + could proceed in Ubuntu, install a [Visual Studio Code] (https://code.visualstudio.com/) is a good choice.
 
-现在，你就可以大胆地去看 ROS 了。作为开源项目，我认为最好的教程就是官网的教程 [ROS Tutorials](https://wiki.ros.org/ROS/Tutorials)。
 
-首先，通过 Beginner Level 和 Intermediate Level 了解 ROS 基本的通讯机制、学会使用 catkin、roslaunch、Rviz 等基本工具。
+- **data structure**：In fact, the above basics should be enough for you to learn about ROS, but, for future study, you can learn some data structures in due course. The data structure, I recommend the online Qinghua teacher Deng Junhui [the data structure (top)] (http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240184+sp/about) and [the data structure (bottom)] (http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240184_2X+sp/about).
 
-之后，就可以根据各自的研究兴趣去看不同模块了。
 
-如果有条件，能够配合一些 ROS 支持比较好的平台进行研究的话，可以大大提高学习速度。例如 TurtleBot、Baxter、Universal Robot 之类的。（这就看每个人条件了。）
-
-理论上，在 ROS 环境下，你可以从事绝大多数与实时控制无关的研究，如 SLAM、Navigation、Motion Planning 等。如果你从事的是更加底层的工作，（如控制器设计），目前 ROS 还无法胜任。（如果不清楚为什么，回顾一下实时操作系统、机器人控制方面的知识）。
+Now, you can go and see ROS.  As open source projects, I think the best tutorial is website tutorial [ROS Tutorials] (https://wiki.ros.org/ROS/Tutorials).
+ 
+ First of all, learn the basic communication mechanism of ROS through Beginner Level and Intermediate Level, and learn to use Catkin, Roslaunch, RVIZ and other basic tools.
+ 
+ After that, you can look at different modules according to your research interests.
+ 
+ If possible, the learning speed can be greatly improved if the research can be carried out in collaboration with some well-supported ROS platforms.  TurtleBot, Baxter, Universal Robot, etc.  It depends on each person's qualifications.
+ 
+ In theory, in a ROS environment, you can do most of the research that has nothing to do with real-time control, such as SLAM, Navigation, Motion Planning, etc.  If you're doing something even more low-level (like controller design), ROS isn't up to it right now.  (If you're not sure why, review your knowledge of real-time operating systems, robot control.)

@@ -2,46 +2,51 @@
   <img width="500" src="../Pics/TheBrave.jpg"/>
 </p>
 
-现在，你已经知道了如何让一个机器人动起来，并且深入掌握了机器人某一领域的知识。然后，你就像一个刚刚斩杀第一只史莱姆的勇者一般，举着宝剑，时刻准备着将宝剑刺入恶龙的胸口。
+Now that you know how to make a robot move, you have a deep knowledge of a particular area of the robot.  Then, like a brave man who has just killed the first Slime, you hold up your sword, ready to plunge it into the dragon's chest.
+ 
+But then someone runs up and throws a basin of water over your head:
+ 
+Now any company, with a little money, can get a robot drawn, process it in a factory, buy some motors, reducers, and so on, put on a universal controller, and you can run.  You don't need dynamics, optimal control, or motion planning!
+ 
+Even for the four people, DH is enough for robot modeling. At most, they can do some kinematics calibration and dynamics identification, and pay more attention to application integration.  You don't need Lie groups, Lie algebras, convex optimization, and reinforcement learning.
+ 
 
-但是，这时候有人跑过来，往你头上浇了一盆水：
 
-现在随便一个公司，花点钱请人画个机器人图纸，找工厂加工出来，买些电机、减速器之类的零部件，套上一个通用控制器就可以跑了。哪需要什么动力学、最优控制、运动规划呀！
+**「There are no dragons in this world!」**
 
-就连四大家，机器人建模用 DH 就够了，最多做点运动学标定、动力学辨识，更多精力放在了应用集成上。哪需要什么李群李代数、凸优化、强化学习呀！
-
-**「这世上哪儿有什么恶龙啊！」**
-
-然而，我想说的是，就机器人这块，只要工农业这类体力劳动没有实现完全的自动化，恶龙就存在：
+However, I would argue that in the case of robots, as long as manual labor such as agriculture and industry is not fully automated, the dragon exists:
 
 <p align="center">
   <img width="500" src="../Pics/Teaching.gif"/>
 </p>
 
-当你看到绝大多数机器人还是通过上面这样的方式，一点点示教出来的，你会有强烈的感觉：「这就是恶龙！」
+When you see most robots being taught this way, little by little, you have a strong feeling: 「This is the dragon!」
+
 
 <p align="center">
   <img width="500" src="../Pics/TeachingDevice.jpg"/>
 </p>
 
-当你看到世界上那么多机器人公司，有着各自形形色色、互不兼容的编程语言、示教器的时候，你会有强烈的感觉：「这就是恶龙！」
+When you look at so many robotics companies around the world, with their disparate programming languages and teaching tools, you have a strong feeling: 「That's the dragon!」 
 
 <p align="center">
   <img width="500" src="../Pics/ChineseFactory.jpg"/>
 </p>
 
-当你看到还有非常多与你我同龄的人在工厂里做着重复、枯燥的工作的时候，你会有强烈的感觉：「这就是恶龙！」
 
-是的，在机器人领域，还有非常多恶龙。于是，你拿起剑，又兴冲冲地上路了。
+When you see a lot of people of my age who are doing heavy work and boring work in factories, you have a strong sense of 「this is a dragon!」 " Yes, in the field of robotics, there are very many dragons. So you picked up your sword and went on your way.
 
-忽然，你发现，你之前学的都是如何杀死一个「**真空中的球形龙**」，你不知道应该如何杀死一个真正的龙。
-
-所以，你应该继续学习。去找更多的史莱姆练手，将之前学到的剑法应用在实际战场上。
-
-后来，你又遇到了新问题，你之前的宝剑并不具有「工业级强度」：ROS 经常崩、Orocos的没有处理 [Eigen Alignment](http://eigen.tuxfamily.org/dox/group__TopicStructHavingEigenMembers.html)、没有好用的 3D 传感器、工业机器人不开放底层接口等等。
-
-于是，你意识到，你需要重新打造自己真正的宝剑。
-
-但是，这不是你一个人可以做到的，你需要一个团队，有人挖煤、有人炼钢、有人打铁、有人磨刀……
-
-这时候，不妨来 [RVBUST](http://rvbust.com/) 看看。
+Suddenly, you realize that all you've learned is how to kill 「**a spherical dragon in a vacuum**」, and you don't know how to kill a real dragon.
+ 
+So, you should keep studying.  Find more Slimes to practice with and apply what you've learned on the battlefield.
+ 
+Later, you encounter a new problem, your old sword is not "industrial strength" :  ROS, often collapse, have Orocos processing [Eigen Alignment] (http://eigen.tuxfamily.org/dox/group__TopicStructHavingEigenMembers.html), not to use 3 d  Sensors, industrial robots do not open the underlying interface, and so on.
+ 
+Then you realize you need to rebuild your real sword.
+ 
+However, you can not do this alone, you need a team, someone to dig coal, someone to make steel, someone to hammer iron, someone to sharpen knives......
+ 
+Take a look at [RVBUST](http://rvbust.com/).
+ 
+ 
+ 
